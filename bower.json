@@ -1,0 +1,13 @@
+{
+  "name": "chat",
+  "version": "0.0.1",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "components"
+  ],
+  "dependencies": {
+    "amazeui": "^2.7.2",
+    "font-awesome": "Font-Awesome#^4.7.0"
+  }
+}

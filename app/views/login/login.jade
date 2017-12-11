@@ -1,0 +1,28 @@
+extends ../layout
+
+append css
+	link(rel="stylesheet", href="/css/login/login.css")
+
+block main
+	.am-g
+		.am-u-sm12._header._c1 header
+
+	.am-g
+		.am-u-sm-7._left._c1 left
+
+		.am-u-sm-5._right._c1 right
+			form.am-form.am-form-horizontal(method="get",action="/login/check")
+				.am-form-group
+					label.am-u-sm-2.am-form-label(for='doc-ipt-3') 账号
+					.am-u-sm-10
+						input#doc-ipt-3(type='email', placeholder='请输入账号')
+				.am-form-group
+					label.am-u-sm-2.am-form-label(for='doc-ipt-pwd-2') 密码
+					.am-u-sm-10
+						input#doc-ipt-pwd-2(type='password', placeholder='请输入密码')
+				.am-form-group
+					.am-u-sm-10.am-u-sm-offset-2
+						button.am-btn.am-btn-secondary(type='submit') 登陆
+						a(href="/login/reg")	没有账号？点击注册!
+	.am-g
+		.am-u-sm12._footer._c1 footer

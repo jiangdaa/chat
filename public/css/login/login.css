@@ -1,0 +1,23 @@
+._header {
+  width: 100%;
+  height: 20vh;
+  background: pink;
+}
+._left {
+  background: green;
+  height: 70vh;
+}
+._right {
+  background: #ccc;
+  height: 70vh;
+}
+._footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 10vh;
+  background: gray;
+}
+._c1 {
+  padding: 10px;
+}
