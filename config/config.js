@@ -9,7 +9,7 @@ const config = {
       name: 'chat'
     },
     port: process.env.PORT || 3000,
-    db: 'mongodb://localhost/chat-development'
+    db: 'mongodb://localhost/chat'
   },
 
   test: {

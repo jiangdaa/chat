@@ -3,4 +3,50 @@ extends ../layout
 append css
 	link(rel="stylesheet", href="/css/home/main.css")
 block main
-	
+		._top
+
+		.am-g.am-g-collapse._min_width
+			.am-u-sm-6.am-cf.am-u-sm-centered
+				.am-u-md-4.am-cf.am-g-collapse._left 
+					.am-u-md-2.am-g-collapse._left_tool_left  
+						.am-btn-group-stacked
+								i.fa.fa-comment._tool_left_icon(style="color:#09bb07;") 
+								i.fa.fa-list-alt._tool_left_icon
+								i.fa.fa-cog._tool_left_icon
+					.am-u-md-10.am-cf.am-g-collapse._left_tool_right
+						._tab_list.am-g-collapse 
+						each a in  [1,2,3]
+							._left_tool_left_list.am-cf
+								._photo 
+									img(src="http://img3.redocn.com/tupian/20131021/katongtouxiang_2334134_small.jpg" width="50" height="50")
+								._msg_box.am-cf
+									span._name.am-fl  名字
+									span._time.am-fr 14:02
+									div._msg  消息消息消息消息消息消息消息消息消息消息消息消息
+						._tab_list 2  
+				.am-u-md-8._right 
+					._right_box_title 名字 &nbsp;
+						//-i.fa.fa-chevron-down
+					._right_box_content 
+						ul.am-comments-list.am-comments-list-flip
+							li.am-comment
+								a(href='#link-to-user-home')
+									img.am-comment-avatar(src='http://img3.redocn.com/tupian/20131021/katongtouxiang_2334134_small.jpg', alt='', width='48', height='48')
+								.am-comment-main(style="background:#ffffff;width:200px; border-radius:3px;")
+									.am-comment-bd
+										p
+											| 那，
+							li.am-comment.am-comment-flip
+								a(href='#link-to-user-home')
+									img.am-comment-avatar(src='http://img3.redocn.com/tupian/20131021/katongtouxiang_2334134_small.jpg', alt='', width='48', height='48')
+								.am-comment-main(style="background:#9eea6a;width:200px; border-radius:3px;position:absolute;right:5px")
+									.am-comment-bd
+										p
+											a(href='#lurenyi') @路人乙
+					._right_box_chat
+
+						._right_box_chat_tool &nbsp;
+							i.fa.fa-smile-o._tool_icon &nbsp;&nbsp;&nbsp;
+							i.fa.fa-folder-open-o._tool_icon &nbsp;
+						textarea(rows="3",resize="none")._right_box_chat_input
+						button._right_box_chat_send 发送(S)

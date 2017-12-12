@@ -8,11 +8,15 @@ module.exports = (app) => {
 
 router.get('/main', (req, res, next) => {
 
-  res.render('home/main', {
-    title: 'Generator-Express MVC',
-    articles: 'chat'
-  });
+	res.render('home/main',{});
 
+
+
+
+
+
+
+ 	res.end(req.session.username);
 });
 
 

@@ -7,6 +7,7 @@ const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser');
 const compress = require('compression');
 const methodOverride = require('method-override');
+const session = require("express-session");
 
 module.exports = (app, config, io) => {
   const env = process.env.NODE_ENV || 'development';
@@ -26,6 +27,11 @@ module.exports = (app, config, io) => {
   app.use(compress());
   app.use(express.static(config.root + '/public'));
   app.use(methodOverride());
+  app.use(session({
+    secret: 'keyboard cat',
+    resave: false,
+    saveUninitialized: true
+  }));
 
   var controllers = glob.sync(config.root + '/app/controllers/*.js');
   controllers.forEach((controller) => {

@@ -3,7 +3,7 @@
 module.exports = (app) => {
 
   app.get('/', (req, res, next) => {
-    res.redirect('/login/login');
+    return res.redirect('/login/login');
 
   });
 
